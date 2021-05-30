@@ -1,0 +1,380 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: sans-serif;
+    color: white;
+    background-color:rgb(255, 255, 255);
+}
+
+
+/** Header **/
+.header {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1790px;
+    top: 8px;
+    left: 0;
+}
+
+.header img {
+    width: 400px;
+    margin: 15px;
+}
+
+.main {
+    height: 710px;
+    background: url(../img/painel.jpg) center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+/**Menu**/
+
+.menu {
+    position: relative;
+}
+
+.menu ul {
+    padding:20px;
+    margin:0px;
+    background-color:;
+    list-style:none;
+    font-size: 20px;
+}
+
+.menu ul li { 
+    display: inline; 
+    padding: 10px;
+    position: static;
+}
+
+
+
+.menu ul li a {
+    padding: 20px 60px;
+    display: inline-block;
+    /* visual do link */
+    background-color:;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-bottom:3px solid #EDEDED;
+}
+
+.menu ul li a:hover {
+    background-color:;
+    color: #6D6D6D;
+    border-bottom:3px solid #EA0000;
+}
+
+nav #selecionado a {
+    color: #6D6D6D;
+    border-bottom:3px solid #EA0000;
+ }
+
+}
+
+/**Main**/
+.main {
+    height: 710px;
+    background: url(../img/painel.jpg) center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.main-child {
+    z-index: 1;
+    display: grid;
+    justify-items: center;
+}
+
+.main-child img {
+    width: 700px;
+    margin-top: 10%;
+}
+
+.main p {
+    font-size: 30px;
+}
+
+/**Imagem**/
+
+
+/**Home**/
+.box img{
+    width: 100%;
+    height: 450px;
+    cursor: pointer;
+}
+
+.texto {
+    position: relative;
+    font-size: 50PX;
+    text-align: center;
+    color: #050505;
+}
+
+#texto2 {
+    position: relative;
+    font-size: 40PX;
+    text-align: center;
+    color: #6b2e1a;
+}
+
+.box #texto:hover {
+    color: rgb(63, 62, 62);
+    cursor: pointer;
+}
+
+.box #texto2:hover {
+    color: rgb(63, 62, 62);
+    cursor: pointer;
+}
+
+.bgWhite {
+    background-color: #FFF;
+}
+
+.radius {
+    border-radius: 10px;
+}
+
+.produtos {
+    width: auto;
+    height: ;
+    text-align: left;
+    margin-bottom: 3%;
+    margin-top: 1%;
+    margin: 1%;
+}
+
+
+.produtos img {
+    border-radius: 10px 10px 10px 10px;
+}
+
+.produtos .box a {
+    font-size: 2em;
+    color: #000;
+    font-weight: bold;
+}
+
+.maps {
+    width: 100%;
+    height: ;
+    border-radius: 10px;
+}
+
+/** Fundo escuro **/
+.gradient {
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 0,
+        rgba(0, 0, 0, 0.8) 60%,
+        rgba(0, 0, 0, 0.8) 100%,
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/**RodaPé**/
+
+.container {
+    width: 100%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+.bgGradient {
+    background: linear-gradient(to right, #661A00, #FFB69D);
+}
+
+.socialIcons {
+    width: 100%;
+    margin-top: 2%;
+}
+
+.socialIcons a {
+    font-size: 1.7em;
+    color: #FFF;
+    margin-right: 3%;
+    opacity: 0.7;
+}
+
+.socialIcons a:last-child {
+    margin-right: 0;
+}
+
+.socialIcons a:hover {
+    opacity: 1;
+}
+
+.icondesenvolvedor {
+
+    font-size: 1em;
+    color: #FFF;
+    margin-right: 3%;
+    opacity: 0.7;
+}
+
+.direitos {
+    margin-top: 5%;
+    color: #FFF;
+    opacity: 0.7;
+}
+
+/**Voltar ao topo**/
+
+.back-to-top {
+    width: 55px;
+    height: 100px;
+    display: block;
+    background: url("../img/seta2.fw.png") no-repeat;
+    position: fixed;
+    bottom: 0;
+    right: 0px;
+}
+
+.back-to-top:hover {
+    cursor: pointer;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+/**Janela Modal**/
+
+#janelaModal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0px;
+    top: 0px;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: auto;
+}
+
+#imgModal {
+    margin: auto;
+    display: block;
+    width: 100px;
+    max-width: 800px;
+}
+
+#brFechar {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+/**Tela minima 320px**/
+@media screen and (max-width: 1023px) {
+    
+    .btClose {
+        font-size: 2.5em;
+        color: #FFF;
+        float: right;
+        cursor: pointer;
+        margin: 2% 3% 0 0 ;
+    }
+
+    .menu {
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background-color: rgba(0,0,0,0.9);
+        top: 0;
+        left: 0;
+    }
+
+    .menu ul {
+        width: 100%;
+        float: left;
+        text-align: center;
+    }
+    
+    .menu ul li {
+        padding: 10%;
+    }
+    
+    .menu ul li a {
+        text-decoration: none;
+        font-size: 3em;
+        color: #FFF;
+    }
+    
+    .header button {
+        display: inline-block;
+        background: rgb(0, 0, 0);
+        color: white;
+        align-self: flex-start;
+        padding: 8px 18px;
+        text-decoration: none;
+        border-radius: 6px;
+        margin: 10px;
+        cursor: pointer;
+        font-size: 1cm;
+        border: 0;
+        text-align: center;
+    }
+
+}
+
+/**Tela minima 1024px**/
+@media screen and (min-width: 1024px) {
+
+    .menu ul li a  {
+        display: inline;
+    }
+
+    .btClose  {
+        display: none;
+    }
+
+    .btMenu {
+        display: none;
+    }
+
+    .produtos {
+        width: 49%;
+        margin: 0.5%;
+        float: left;
+    }
+
+    .produtosinicio{
+        height: ;
+        border-radius: 10px;
+    }
+ 
+}

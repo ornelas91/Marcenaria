@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Marcenaria Ms</title>
+        <meta name="author" content="Anderson Ornelas">
+        <meta name="keywords" content="marcenaria, mobilesolver, moveis planejados" />
+        <link rel="icon" href="../img/icon.jpg">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../fontawesome-free-5.13.0-web/css/all.min.css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+        <script type="text/javascript" src="../js/voltartopo.js"></script>
+    
+        <script src='../galeria/libs/jquery/jquery.min.js'></script>
+        <link rel='stylesheet' href='../galeria/dist/css/justifiedgallery.css'
+	        type='text/css' media='all' />
+        <script src='../galeria/src/js/justifiedgallery.js'></script>
+        <link rel='stylesheet' href='../galeria/libs/swipebox/swipebox.css' type='text/css' media='screen' />
+        <script src='../galeria/libs/swipebox/jquery.swipebox.min.js'></script>
+        <link rel='stylesheet' href='../galeria/libs/jquery-colorbox/colorbox.css' type='text/css' media='screen' />
+        <script src='../galeria/libs/jquery-colorbox/jquery.colorbox-min.js'></script>
+        <script>
+	$(document).ready(function() {
+		$('#remotetest').justifiedGallery({rel: 'gal0'}).on('jg.rowflush', function () {
+			$(this).find('a').colorbox({
+				maxWidth : '80%',
+				maxHeight : '80%',
+				opacity : 0.8,
+				transition : 'elastic',
+				current : ''
+			});
+		});
+	});
+</script>
+        
+    </head>
+
+    <body>
+
+        <header class="header">
+            <a href="../index.html"><img src="../img/logo.fw.png" title="Mobile Solver" alt="MS" draggable="false"></a>
+            <button class="btMenu bgGradient" title="Menu"><i class="fas fa-bars"></i></button>
+            <nav class="menu">
+                <a href="#" class="btClose"><i class="fas fa-times"></i></a>
+                <ul>                    
+                    <li><a  href="../index.html">Início</a></li>
+                        <li id="selecionado"><a href="index2.html">Serviços</a></li>
+                            <li><a href="index3.html">Projetos</a></li>
+                                <li><a href="index4.html">Contato</a></li> 
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="main-child">
+                <img src="../img/logo2.fw.png" title="Marcenaria MS" draggable="false">
+                <p>O futuro pertence àqueles que acreditam na beleza de seus sonhos.</p>
+            </div>
+            <div class="gradient"></div>
+        </main>
+
+        <div id="remotetest">
+            <a
+                href="../img/cozinha.jpg"
+                title="Todos os tipos de Cozinhas"><img alt="Cozinhas"
+                src="../img/cozinha.jpg" />
+            </a>
+            <a
+                href="../img/sala.jpg"
+                title="Salas Completas"><img class="colorbox-165"
+                alt="Salas"
+                src="../img/sala.jpg" />
+            </a>
+            <a
+                href="../img/quarto.jpg"
+                title="Quartos Completos"><img class="colorbox-165"
+                alt="Quartos"
+                src="../img/quarto.jpg" />
+            </a>
+            <a
+                href="../img/banheiro.jpg"
+                title="Banheiros Completos"><img class="colorbox-165"
+                alt="Banheiros"
+                src="../img/banheiro.jpg" />
+            </a>
+            <a
+                href="../img/lavandeiria.jpg"
+                title="Lavandeirias Completas"><img class="colorbox-165"
+                alt="Lavandeirias"
+                src="../img/lavandeiria.jpg" />
+            </a>
+            <a
+                href="../img/home-office.jpg"
+                title="Criamos o se Home-Office"><img class="colorbox-165"
+                alt="Home-Office"
+                src="../img/home-office.jpg" />
+            </a>
+            
+    
+        </div>
+
+        
+
+        <!--Rodapé-->
+        <footer class="container bgGradient">
+
+            <div class="socialIcons">
+                <a href="#"><i class="fab fa-facebook-f" title="Siga nosso Facebook"></i></a>
+            <!--<a href="#"><i class="fab fa-twitter" title="Twitter"></i></a>-->
+                <a href="#"><i class="fab fa-instagram" title="Siga nosso Instagram"></i></a>
+                <a href="#"><i class="fas fa-map-marker-alt" title="Veja nossa Localização"></i></a>
+                <a href="#"><i class="fas fa-envelope" title="Entre em contato pelo nosso E-mail"></i></a>
+            </div>
+            
+            <p class="direitos">Copyright © Marcenaria Ms 2020. Todos os direitos reservados.</p><br><br>
+
+            <p class="desenvolvido">Desenvolvido por: Ornelas <a class="icondesenvolvedor" href="https://wa.me/5511964282974" target="_blank"><i class="fab fa-whatsapp" title="Whatssapp do desenvolvedor"></i></a></p><br>
+
+        </footer>
+
+        <spam class="back-to-top" title="Voltar ao topo"></spam>
+
+        <script>
+            $(".btMenu").click(function() {
+                $(".menu").show(300);
+            });
+
+            $(".btClose").click(function() {
+                $(".menu").hide(300);
+            });
+        </script>
+
+    </body>
+</html>
